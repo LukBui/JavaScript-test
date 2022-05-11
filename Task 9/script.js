@@ -19,9 +19,9 @@ class Movie {
      }
 
      wasExpensive() {
-         return this.budget > 100000000 ? true : false
+         return this.budget > 100000000;
      }
 }
 
-const film = new Movie('Transporteris', 'Benas Aflekas', 100000000)
+const film = new Movie('Transporteris', 'Benas Aflekas', 10000000000)
 console.log(film.wasExpensive());
