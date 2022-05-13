@@ -11,4 +11,8 @@ const audi = {
   color: 'white',
 };
 
-showObjectKeys
+const showObjectKeys = (audi) => {
+  return Object.entries(audi).map(item => item[0])
+};
+
+console.log(showObjectKeys(audi));
