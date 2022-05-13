@@ -52,6 +52,20 @@ form {
   color: #fff;
 }
 
+#output {
+  align-items: center;
+  flex-direction: column;
+  font-size: 50px;
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+}
+
+#output p {
+  padding-bottom: 20px;
+}
+
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
