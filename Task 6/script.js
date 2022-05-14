@@ -20,11 +20,15 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
+
 //1
-const getUserAverageAge = (users) => users.filter((age) => age)
+let age = 0;
 
+users.forEach((user) => {
+  age = age + user.age / users.length; 
+})
 
-
+console.log(age);
 
 
 //2

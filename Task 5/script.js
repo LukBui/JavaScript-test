@@ -21,13 +21,10 @@ const users = [
 ];
 
 //1
-// const filterDogOwers = users.filter(function (dog) {
-//   if (hasDog === true) {
-//     return dog.hasDog;
-//   }
-// });
-
-// console.log(filterDogOwers);
+const filterDogOwers = users.filter(function(dog) {
+  return dog.hasDog === true;
+})
+console.log(filterDogOwers);
 
 //2
 const filteredAdults = users.filter(function (age) {
