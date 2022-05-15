@@ -27,3 +27,9 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -16,5 +16,15 @@ const ENDPOINT = 'https://api.github.com/users';
 fetch('https://api.github.com/users')
     .then(response => response.json())
     .then((data) => {
-        
+        appendData(data);
     });
+
+const output = document.getElementById('output');
+
+output.addEventListener('click', function() {
+    for(let i = 0; i < data.length; i++) {
+        const login = document.createElement('div');
+        login.innerHTML = 'Login: ' + data[i].brand;
+        output.appendChild(login)
+    }
+})
